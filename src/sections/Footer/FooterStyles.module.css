@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  padding: 1rem 0;
+  display: flex;
+  width: 100%;
+  margin-top: 0rem;
+  justify-content: center;
+  }
+ .container p {
+    font-size: 16px;
+    color: var(--footer-text-color);
+  }
+  @media (width <= 1480px) {
+    .container{
+      padding-top: 2rem;
+    }
+  }
+  @media (width < 1024px) {
+    .container{
+      margin-top: 2rem;
+      /* position: relative; */
+    }
+  }

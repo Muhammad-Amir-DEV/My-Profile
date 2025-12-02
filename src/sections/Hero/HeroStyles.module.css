@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 5rem 0 1rem 0;
+}
+ .container .colorModeContainer .hero {
+    max-width: 100%;
+    margin: 0 auto;
+
+  }
+
+ .container span {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  }
+  .container span a {
+      margin: 0;
+    }
+.container  span a   img {
+        width: 23px;
+      }
+   
+  
+
+ .container a {
+    width: fit-content;
+    align-self: center;
+  }
+
+ .container button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+  .info span a{
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+  .info span a:hover {
+    transform: scale(1.2);
+    background-image: var(#0987f2);
+    color: #0987f2;
+  }
+ .container button:hover {
+    transform: scale(1.05);
+  }
+
+ .container button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+
+.colorModeContainer {
+  position: relative;
+}
+
+.colorMode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  filter: invert(100%);
+}
+
+.colorMode:hover {
+  cursor: pointer;
+}
+
+.description {
+  max-width: 40ch;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.info span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1.5rem;
+}
+.info span a img{
+  height: 2rem;
+}
+@media (width >= 800px) {
+
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+    .container .hero {
+      margin: 0 auto;
+      max-width: 350px;
+      width: 350px;
+    }
+  
+}
+@media (width >=1030px) {
+  .container{
+    gap: 6rem;
+  }
+}
+@media (width<=800px) {
+  .colorModeContainer img{
+    right: 15%;
+  }
+  .container{
+    padding-top: 6rem;
+  }
+  .description {
+    max-width: 35ch;
+  }
+}
+@media (width >= 1500px) {
+  .colorModeContainer{
+    width: 30%;
+  }
+  .colorModeContainer .hero{
+    width: 100%;
+  }
+   
+    .info span a img{
+      width: auto;
+      height: 4rem !important;
+    }
+  .container button{
+    width: 12rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}

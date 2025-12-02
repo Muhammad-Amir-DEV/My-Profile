@@ -1,0 +1,162 @@
+[data-theme='dark'] {
+  --background-color: #fff;
+  --btn-color: #0987f2;
+  --btn-text-color: #fff;
+  --project-card-bg: #ffffff00;
+  --text-color: #222;
+  --form-text-color: #555;
+  --footer-text-color: #888;
+}
+
+:root {
+  /* --background-color: #222; */
+  --btn-color: #0987f2;
+  --btn-text-color: #fff;
+  --project-card-bg: #fff;
+  --text-color: #fff;
+  --form-text-color: #fff;
+  --footer-text-color: #bbb;
+}
+
+.ani:hover img {
+  padding: 0;
+  transition-duration: .4s;
+  transform: scale(100.05%);
+}
+.btt{
+      background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+.btt:hover{
+  transform: scale(1.05);
+}
+.main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mainbody {
+  background-color: var(--background-color);
+}
+
+body {
+  background-color: rgb(17 24 39);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 20px !important;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.sectionTitle {
+  margin-bottom: 30px;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+@media (width >=800px) {
+  #root {
+    gap: 100px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+}
+
+  @media (width >=1500px) {
+    #root {
+      gap: 200px;
+    }
+
+    h1 {
+      font-size: 6rem !important;
+    }
+    h2{
+      font-size: 3rem !important;
+      font-weight: 600 !important;
+    }
+    p{
+      font-weight: 100 !important;
+      font-size: 2.3rem !important;
+    }
+    .sectionTitle {
+      margin-bottom: 75px;
+    }
+  }

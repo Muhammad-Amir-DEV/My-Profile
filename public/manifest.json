@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "My React Extension",
+  "version": "1.0",
+  "description": "A Chrome extension built with Vite and React.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "permissions": [],
+  "icons": {
+    "128": "icon.png"
+  }
+}

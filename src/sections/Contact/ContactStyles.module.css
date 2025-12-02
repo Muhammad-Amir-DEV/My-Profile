@@ -1,0 +1,187 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+textarea,
+input:not([type='submit']) {
+  height: 50px;
+  padding-left: 16px;
+  width: 250px;
+}
+
+textarea {
+  padding-top: 16px;
+  resize: none;
+  height: 250px;
+}
+
+input,
+textarea {
+  border-radius: 14px;
+  border: #888 1px solid;
+  box-sizing: border-box;
+  justify-self: center;
+  background-color: var(--background-color);
+  color: var(--form-text-color);
+}
+
+::placeholder {
+  color: var(--form-text-color);
+}
+textarea::placeholder{
+  padding-left: 16px;
+  padding-top: 10px;
+}
+input[type='submit'] {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
+}
+
+input[type='submit']:hover {
+  transform: scale(1.05);
+}
+
+input[type='submit']:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+@media (width >=500px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 400px;
+  }
+}
+@media (width >= 800px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 600px;
+    font-size: 20px;
+  }
+  textarea::placeholder{
+    font-size: 20px;
+  }
+  form {
+    gap: 40px;
+  }
+}
+
+.container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.hiddenLabel {
+  display: none;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.feedbackMessage {
+  margin-top: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.submitButton {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submitButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Button states */
+.sending {
+  background-color: #ff9800; /* Yellow for sending */
+  transform: scale(1);
+}
+
+.sent {
+  background-color: #4caf50; /* Green for sent */
+}
+
+.submitButton:active {
+  transform: scale(0.98);
+}
+
+
+@media (width >= 1400px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 900px;
+  }
+  textarea,  input:not([type='submit']) {
+    width: 700px;
+    font-size: 25px;
+  }
+  textarea::placeholder{
+    font-weight: 600;
+    font-size: 25px;
+  }
+}
